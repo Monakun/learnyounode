@@ -1,0 +1,1 @@
+const fs=require("fs");const path=require("path");module.exports=function(dir,ext,cb){fs.readdir(dir,function(err,list){if(err)return cb(err);cb(null,list.filter(function(f){return path.extname(f)==="."+ext}))})}

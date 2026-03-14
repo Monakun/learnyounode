@@ -1,0 +1,1 @@
+const m=require("./mymodule");m(process.argv[2],process.argv[3],function(err,list){if(err)return console.error(err);list.forEach(function(f){console.log(f)})})

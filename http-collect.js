@@ -1,0 +1,1 @@
+const http=require("http");http.get(process.argv[2],res=>{res.setEncoding("utf8");let d="";res.on("data",c=>d+=c);res.on("end",()=>{console.log(d.length);console.log(d)})})

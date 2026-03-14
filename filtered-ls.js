@@ -1,0 +1,1 @@
+const fs=require("fs");const p=require("path");fs.readdir(process.argv[2],(e,l)=>{if(e)throw e;l.filter(f=>p.extname(f)==="."+process.argv[3]).forEach(f=>console.log(f))})

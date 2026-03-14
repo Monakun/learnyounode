@@ -1,0 +1,1 @@
+const net=require("net");function z(n){return n<10?"0"+n:n}function f(){const d=new Date();return d.getFullYear()+"-"+z(d.getMonth()+1)+"-"+z(d.getDate())+" "+z(d.getHours())+":"+z(d.getMinutes())+"\n"}net.createServer(s=>s.end(f())).listen(process.argv[2])
